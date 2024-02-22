@@ -248,6 +248,7 @@ A Type defines a set of values and a set of operations that can be applied on th
 DataTypes in C++ is mainly divided into two types:
 
 1.  Primitive Data Types:
+
     -   Integer
 
     -   Character
@@ -263,7 +264,9 @@ DataTypes in C++ is mainly divided into two types:
     -   Wide Character
 
     -   String
+
 2.  Abstract or User Defined Data Type:
+
     -   **Basic Data Types**
 
         -   Integer
@@ -298,7 +301,42 @@ DataTypes in C++ is mainly divided into two types:
 
         -   Typedef
 
-# UML
+    # UML Interaction Diagram
+
+-   Diagram is used to describe some type of interactions among different elements in the model. This interaction is a type of dynamic behavior of the system
+-   The interactive behaviour is represented in UML by:
+
+1.  Sequence Diagram
+
+    -   Sequence diagram emphasizes on time sequence of messages
+
+    -   It represents the flow of messages in the system and is also termed as event diagram
+
+    -   It helps in envisioning several dynamic scenarios
+
+    -   portrays the communication between any two lifelines as a time-ordered sequence of events, such that these lifelines took part at the run time
+
+    -   The lifeline is represented by a vertical bar, whereas the message flow is represented by a vertical dotted line that extends across the bottom of the page.
+
+    -   It incorporates the iterations as well as branching.
+
+        **Notations of a sequence diagram**
+
+        1.  Lifeline
+        2.  Actor
+        3.  Activation
+        4.  Messages
+        5.  Sequence fragments
+
+    -   Lifeline: An individual participant in the sequence diagram is represented by lifeline. It is positioned at the top of the diagram
+
+    -   Actor: A role played by an entity that interacts with the subject is called as an actor. It is out of the scope of the system. An actor may or may not represent a physical entity, but it purely depicts the role of an entity. Several distinct roles can be played by an actor or vice versa.
+
+2.  Collaboration Diagram
+
+    Collaboration diagram emphasizes on structural diagram of objects that send and receive messages
+
+    # UML
 
 -   It is not a programming language but a visual language
 
@@ -361,3 +399,93 @@ DataTypes in C++ is mainly divided into two types:
 
 -   It is further extended by several use cases such as:\
     Search Items, Browse Items, View Recommended Items, Add to Shopping Cart, Add to Wish List
+
+# Destructor
+
+-   Special member function like constructor
+
+-   Destroys the class objects created by the constructor
+
+-   Has same name as their class name preceded by a \~
+
+-   It is the only way to destroy the objects created by constructor. Hence it cannot be overloaded.
+
+-   It neither requires any argument not returns any value. It is automatically called when object is out of scope
+
+-   It releases the memory space occupied by the constructor
+
+    ``` cpp
+    #include <iostream>
+    using namespace std;
+    class Test {
+    public:
+      Test() {
+        cout << "\n Constructor executed"; }
+      ~Test()
+      { cout << "\n Destructor executed"; }
+      };
+    main()
+    ```
+
+# Polymorphism
+
+-   ability of a message to be displayed in more than one form
+
+-   It allows us to form a single action in different ways (define one interface to have multiple implementations)
+
+## Types of Polymorphism
+
+1.  **Compile Time Polymorphism**
+
+-   Also known as Function Overloading or Operator Overloading.
+-   Resolved at compile time
+-   Multiple functions or operators with the same name but different parameters are defined.
+-   The compiler determines which function or operator to call based on the number and types of arguments provided.
+
+```         
+class CompileTimePolymorphism {
+public:
+    // Function Overloading
+    int add(int a, int b) {
+        return a + b;
+    }
+    double add(double a, double b) {
+        return a + b;
+    }
+};
+```
+
+2.  **Runtime Polymorphism (Dynamic Polymorphism):**
+
+    -   Achieved through **Function Overriding** and **Virtual Functions**.
+
+    -   Resolved at runtime using a mechanism called the virtual table (vtable).
+
+    -   Requires the use of a base class and derived classes.
+
+    -   The base class has a virtual function, and derived classes provide their own implementations of the virtual function.
+
+    ```         
+    class Shape {
+    public:
+        virtual void draw() {
+            // Base class implementation
+        }
+    };
+
+    class Circle : public Shape {
+    public:
+        void draw() override {
+            // Derived class implementation for drawing a circle
+        }
+    };
+    Shape* shapePtr = new Circle();
+    shapePtr->draw();  // Calls the overridden draw() in the Circle class
+    ```
+
+    # Constructor Overloading
+
+-   can have more than one constructor in a class with same name, as long as each has a different list of arguments.
+-   also known as constructor overloading and is quite similar to function overloading
+-   overloaded constructors essentially have the same name and different by number of type of arguments
+-   a constructor is called depending upon the number and type of arguments passed
