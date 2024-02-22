@@ -200,6 +200,104 @@ int main(){
 }
 ```
 
+# Variables
+
+Content of memory location that stores a certain value. A certain variable is identified or denoted by a variable name.
+
+*Rules*
+
+-   A variable name can have one or more letters or digits or underscore
+
+-   white space or punctuation symbols are not allowed
+
+-   must begin with a letter
+
+-   cannot be keyword or any reserved word
+
+-   Data C++ is a case-sensitive language
+
+## Types of variables
+
+-   Local Variables
+
+    ``` cpp
+    public class Car{
+    public: 
+      void display(int m)
+    };
+    ```
+
+-   Instance Variables
+
+    -   Belongs to an instance or object of a class
+
+    -   Each instance of a class has its own copy
+
+    -   Exists as long as the object exists
+
+    -   Declared within a class but outside any function
+
+-   Static Variables
+
+-   Constant Variables
+
+# Datatypes of C++
+
+A Type defines a set of values and a set of operations that can be applied on those value. The set of values for each type is known as the domain for the type
+
+DataTypes in C++ is mainly divided into two types:
+
+1.  Primitive Data Types:
+    -   Integer
+
+    -   Character
+
+    -   Boolean
+
+    -   Floating Point
+
+    -   Double Floating Point
+
+    -   Valueless or Void
+
+    -   Wide Character
+
+    -   String
+2.  Abstract or User Defined Data Type:
+    -   **Basic Data Types**
+
+        -   Integer
+
+        -   Char
+
+        -   Float
+
+        -   Double
+
+        -   Void
+
+    -   **Derived Data Types**
+
+        -   Pointers
+
+        -   Functions
+
+        -   References
+
+        -   Arrays
+
+    -   **User Defined Data Types**
+
+        -   Structure
+
+        -   Class
+
+        -   Union
+
+        -   Enumeration
+
+        -   Typedef
+
 # UML
 
 -   It is not a programming language but a visual language
@@ -232,13 +330,34 @@ int main(){
 
 ### Elements of Use Case Diagrams
 
-#### Use Cases 
-  - A use case describes a function that a system performs to achieve the user's goal. A use case must yield an observable result that is of value to the user of the system. 
+#### Use Cases
+
+-   A use case describes a function that a system performs to achieve the user's goal. A use case must yield an observable result that is of value to the user of the system.
 
 #### Actors
-  - An actor represents the role of a user that interacts with the system that you are modelling.
-  
-#### Subsystems
-  - subsystems are type of stereotypes components that represent independent units in a system.
-  - It is used in class, componenets and use case diagrams to represent large scale components in the system that is being modelled
 
+-   An actor represents the role of a user that interacts with the system that you are modelling.
+
+#### Subsystems
+
+-   subsystems are type of stereotypes components that represent independent units in a system.
+-   It is used in class, componenets and use case diagrams to represent large scale components in the system that is being modelled
+
+#### Relations in Use Case Diagrams
+
+-   Connection between model elements
+
+-   It is a type of model element which adds semantics to a model by defining the structure and the behaviour between model elements
+
+## Steps for making Use Case Diagram
+
+1.  Analyze the whole system before starting
+2.  Find the system functionalities
+3.  List the actors that interact with the system
+4.  Identify the relation between the actor and the use case
+5.  An actor can interact multiple times with a use case or system at a particular instance of time
+
+### View Items
+
+-   It is further extended by several use cases such as:\
+    Search Items, Browse Items, View Recommended Items, Add to Shopping Cart, Add to Wish List
