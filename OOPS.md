@@ -12,13 +12,18 @@ A **Object** has unique attributes and behavior
 
 It is the way of writing computer programs using the concepts of objects which are like building blocks that represent the real world things. It helps to *organize the code neatly making* it reusable and easy to manage
 
+*Simula is the first object oriented programming language\
+Popular Pure Object Oriented Programming Languages include: Ruby, Scala, Jade, Emerald\
+Programming Languages desired primarily for OOP include: Java, Python, C++*
+
 # Aim of OOP:
 
 -   Bind together the data and functions that operate on them so that no other part of the code can access this data except that function.
 
 # Key Concepts of Object Oriented Programming
 
-**Objects** Objects are instances of classes and represent real world entities. They encapsulate data and behavior related to the entity they model. These are instances of a class created with specifically defined data.
+**Objects** Objects are instances of classes and represent real world entities. They encapsulate data and behavior related to the entity they model.\
+*These are instances of a class created with specifically defined data.*
 
 **Class** is an user-defined data types that act as the blueprint for individual objects, attributes and methods.
 
@@ -32,23 +37,25 @@ It is the way of writing computer programs using the concepts of objects which a
 
 -   This characteristic of hiding data hiding provides greater security and avoids unintended data corruption
 
+# Features of Object Oriented Programming
+
 **Inheritance** Enables the creation of new classes that inherit attributes and behaviors from existing classes. It promotes code reuse and the establishment of hierarchy of classes
 
--   Classes can reuse code from other classes
+-   [**Classes can reuse code from other classes**]{.underline}
 
--   forces more through data analysis, reduces development time and ensures a high level of accuracy
-
-# **Key Principles of Object Oriented Programming**
+-   forces more through `data analysis, reduces development time and ensures a high level of accuracy`
 
 **Polymorphism** It allows objects to be treated as instances of their parent classes, enabling flexibility in code design. It includes method overloading and method overriding.
 
--   Object are designed to share behaviors and they can take on more than one form
+-   [**Object are designed to share behaviors and they can take on more than one form**]{.underline}
 
 -   The program will determine which meaning or usage is necessary for each execution of that object from a parent class, reducing the need to duplicate code
 
 -   A child class is then created which extends the functionality of the parent class
 
 -   It allows different types of objects to pass through the same interface
+
+# **Key Principles of Object Oriented Programming**
 
 **Abstraction** involves simplifying complex systems by modelling classes based on their essential properties. If focuses on what an object does rather than how it achieves its functionality.
 
@@ -139,42 +146,57 @@ It may be more complicated to write and can take longer to compile
 
 # Alternative Methods to OOP
 
-1.  Functional Programming:
+1.  ***Functional Programming***\`:
 
     This includes languages such as Erlang and Scala which are used for telecommunications and fault tolerant systems
 
-2.  Structured or Modular Programming:
+2.  ***Structured or Modular Programming***:
 
     This includes languages such as PHP and C#
 
-3.  Imperative Programming:
+3.  ***Imperative Programming***:
 
     This is alternative to OOP which focuses on function rather than models and includes C++ and Java
 
-4.  Declarative programming:
+4.  ***Declarative programming***:
 
     This programming method involves statements on what the task or desired outcome is but now how to achieve it. Language include Prolog and Lisp
 
-5.  Logical Programming:
+5.  ***Logical Programming***:
 
     This method is based mostly in formal logic and uses languages such as Prolog contains set of sentences that express facts or rules about a problem domain. It focuses on tasks that can benefit from rule based logical queries
 
     *Most Advanced Programming languages enables developers to combine models because they can be used for different programming methods. JavaScript can be used for OOP and functional programming*
 
-    | Flag            | Bit-Field        | Usage                                      | Purpose                                                               | Comment                                                                                                  |
-    |---------------|---------------|---------------|---------------|---------------|
-    | ios::left       | ios::adjustified | cout.setf(ios::left,ios ::adjustified)     | For left justified output                                             | If no flag is set then by default, the output will be right justified                                    |
-    | ios::right      | ios::adjustified | cout.setf(ios::right,ios::adjustifield)    | For right justified output                                            |                                                                                                          |
-    | ios::internal   | ios::adjustified | cout.setf(ios::internal, ios::adjustified) | Left justify sign or base indicator and right- justify rest of number |                                                                                                          |
-    | ios::scientific | ios::floatfield  | cout.setf(ios::scientific,ios::floatfield) | For scientific notation                                               | If no flag is set then any of two notations can be used for point numbers depending on the decimal point |
-    | ios::fixed      | ios::floatfield  | cout.setf(ios::scientific,ios::floatfield) | Left justify sign or base indicator and right- justify rest of number | If no flag is set then any of two notations can be used for point numbers depending on the decimal point |
-    | ios::dec        | ios::basefield   | cout.setf(ios::fixed,ios::floatfield)      | Left justify sign or base indicator and right- justify rest of number | If no flag is set then any of two notations can be used for point numbers depending on the decimal point |
-    | ios::oct        | ios::basefield   | cout.setf(ios::scientific,ios::floatfield) | Left justify sign or base indicator and right- justify rest of number | If no flag is set then any of two notations can be used for point numbers depending on the decimal point |
-    | ios::hex        | ios::basefield   | cout.setf(ios::scientific,ios::floatfield) | Left justify sign or base indicator and right- justify rest of number | If no flag is set then any of two notations can be used for point numbers depending on the decimal point |
+# IO Operations
+
+-   In C++ I/O operations occurs in streams which involves transformation of information into byte
+
+-   Stream is involved in 2 ways
+
+    1.  Source
+    2.  Destination of Data
+
+-   Operators which can be used multiple times is called cascading (Eg. cout \<\< or cin \>\>)
+
+-   Streams are related with a physical device such as a monitor or with a file stored on secondary disk
+
+-   In a text stream, the sequence of character is divided into lines with each line being terminated with a new line character. On the other hand, bianary stream contain data values using their memory representation
+
+| Flag            | Bit-Field        | Usage                                      | Purpose                                                               | Comment                                                                                                  |
+|---------------|---------------|---------------|---------------|---------------|
+| ios::left       | ios::adjustified | cout.setf(ios::left,ios ::adjustified)     | For left justified output                                             | If no flag is set then by default, the output will be right justified                                    |
+| ios::right      | ios::adjustified | cout.setf(ios::right,ios::adjustifield)    | For right justified output                                            |                                                                                                          |
+| ios::internal   | ios::adjustified | cout.setf(ios::internal, ios::adjustified) | Left justify sign or base indicator and right- justify rest of number |                                                                                                          |
+| ios::scientific | ios::floatfield  | cout.setf(ios::scientific,ios::floatfield) | For scientific notation                                               | If no flag is set then any of two notations can be used for point numbers depending on the decimal point |
+| ios::fixed      | ios::floatfield  | cout.setf(ios::scientific,ios::floatfield) | Left justify sign or base indicator and right- justify rest of number | If no flag is set then any of two notations can be used for point numbers depending on the decimal point |
+| ios::dec        | ios::basefield   | cout.setf(ios::fixed,ios::floatfield)      | Left justify sign or base indicator and right- justify rest of number | If no flag is set then any of two notations can be used for point numbers depending on the decimal point |
+| ios::oct        | ios::basefield   | cout.setf(ios::scientific,ios::floatfield) | Left justify sign or base indicator and right- justify rest of number | If no flag is set then any of two notations can be used for point numbers depending on the decimal point |
+| ios::hex        | ios::basefield   | cout.setf(ios::scientific,ios::floatfield) | Left justify sign or base indicator and right- justify rest of number | If no flag is set then any of two notations can be used for point numbers depending on the decimal point |
 
 ***Question:***
 
-Write a C++ program to construct the following pattern, using a nested loop number.\
+Write a C++ program to construct the following pattern, using a `nested loop`.\
 Expected Output:\
 999999999\
 88888888\
@@ -306,7 +328,7 @@ DataTypes in C++ is mainly divided into two types:
 -   Diagram is used to describe some type of interactions among different elements in the model. This interaction is a type of dynamic behavior of the system
 -   The interactive behaviour is represented in UML by:
 
-1.  Sequence Diagram
+1.  **Sequence Diagram**
 
     -   Sequence diagram emphasizes on time sequence of messages
 
@@ -328,13 +350,71 @@ DataTypes in C++ is mainly divided into two types:
         4.  Messages
         5.  Sequence fragments
 
+    -   **Benefits of Sequence Diagram**
+
+        -   Explores real time application
+
+        -   depicts the message flow between the different objects
+
+        -   It has easy maintenance
+
+        -   It is easy to generate
+
+        -   Implement both forward and reverse engineering
+
+        -   It can easily update as per the new change in the system
+
+    -   **Drawback of Sequence Diagram**
+
+        -   In case of too many failures, the sequence diagram can get too complex
+
+        -   We may get incorrect results if the order of flow changes
+
+        -   Since each sequence needs distinct notations for its representation, it may make the diagram more complex
+
+        -   The type of sequence is decided by the type of message
+
     -   Lifeline: An individual participant in the sequence diagram is represented by lifeline. It is positioned at the top of the diagram
 
     -   Actor: A role played by an entity that interacts with the subject is called as an actor. It is out of the scope of the system. An actor may or may not represent a physical entity, but it purely depicts the role of an entity. Several distinct roles can be played by an actor or vice versa.
 
 2.  Collaboration Diagram
 
-    Collaboration diagram emphasizes on structural diagram of objects that send and receive messages
+    -   Collaboration diagram emphasizes on structural diagram of objects that send and receive messages
+
+    -   The collaboration diagram is used to show the relationship between the objects in a system.
+
+    -   Both the sequence and the collaboration diagrams represent the same information but differently.
+
+    -   It depicts the architecture of the object residing in the system
+
+    -   Multiple objects present in the system are connected to each other.
+
+    -   The collaboration diagram, which is also known as a communication diagram, is used to portray the object's architecture in the system.
+
+    -   **Notations of a Collaboration Diagram:**
+
+        -   **Objects:** The representation of an object is done by an object symbol with its name and class underlined, separated by colon
+
+        -   **Actors:** the actor plays the main role as it invokes the interaction. Each actor has its respective role and name. In this, one actor initiates the use case.
+
+        -   **Links:** The link is an instance of association, which associates the objects and actors**.** It portrays a relationship between the objects through which the messages are sent. It is represented by a solid line. The link helps an object to connect with or navigate to another object.
+
+        -   **Messages:** It is a communication between objects which carries information and includes a sequence number, so that the activity may take place. It is represented by a labeled arrow, which is placed near a link.
+
+    -   **When to use a collaboration diagram?**
+
+        -   it is essential to depict the relationship between the object.
+
+        -   sequence and collaboration diagrams represent the same information, but the way of portraying it quite different.
+
+    -   **Steps for creating a Collaboration Diagram:**
+
+        -   Determine the behavior for which the realization and implementation are specified.
+
+        -   Discover the structural elements that are class roles, objects, and subsystems for performing the functionality of collaboration.
+
+        -   Choose the context of an interaction: system, subsystem, use case, and operation.
 
     # UML
 
@@ -399,6 +479,158 @@ DataTypes in C++ is mainly divided into two types:
 
 -   It is further extended by several use cases such as:\
     Search Items, Browse Items, View Recommended Items, Add to Shopping Cart, Add to Wish List
+
+# Constructor
+
+-   C++ is a special method that is automatically called when an object is created
+
+-   Has same name as the class or structure
+
+-   does not have a return value
+
+-   Syntax
+
+``` cpp
+<class-name>(list of parameters){
+  //initialise values to the data members
+}
+```
+
+``` cpp
+class MyClass{
+public: 
+  MyClass(){
+    cout<<"Hello World";
+  }
+};
+int main(){
+  MyClass myObj;
+  return 0;
+}
+```
+
+``` cpp
+class Car
+{
+public:
+  string brand;
+  string model;
+  int year;
+  Car(string x, string y, int z);
+};
+Car::Car(string x, string y, int z)
+{
+  brand = x;
+  brand = y;
+  brand = z;
+}
+int main(){
+  Car carObj1("BMW","X5",1999);
+  Car carObj("Ford","Mustang",1969);
+  cout << carObj1.brand << " " << carObj1.model << " " << carObj1.year << "\n"
+  cout << carObj2.brand << " " << carObj2.model << " " << carObj2.year << "\n"
+}
+```
+
+# Types of Constructors
+
+## 1. Default/Static Constructor
+
+which does not take any argument. It has no parameters. It is also called a zero argument constructor. It is invoked at the time of creating object.
+
+``` cpp
+#include<iostream>
+using namespace::std;
+class Employee{
+public:
+  Employee()
+  cout << "Default Constructor Invoked" <<endl;}
+};
+int main(void){
+  Employee e1;
+  Employee e2;
+  return 0;
+}
+```
+
+## 2. Parameterized Constructor
+
+It is possible to pass arguments to constructors typically these arguments help initialize an object when it is created. It can also take parameters which can be useful for setting initial values for attributes. A constructor which has parameters is called parameterized constructor. It is used to provide different values to distinct objects
+
+``` cpp
+class Car{
+public:
+  string brand;
+  string model;
+  int year;
+  Car(string x, string y, int z){
+    brand = x;
+    model = y;
+    year = z;
+  }
+};
+int main(){
+  Car carObj1("BMW","X5",1999);
+  Car carObj2("Ford","Mustang","1969");
+  cout << carObj1.brand <<" "<< carObj1.model << " " << CarObj1.year << "\n";
+  cout << carObj2.brand <<" "<< carObj2.model << " " << CarObj2.year << "\n";
+}
+```
+
+*Create a **`Rectangle`** class with parameterized constructors to set the length and width. Include a method to calculate the area of the rectangle*
+
+``` cpp
+#include<iostram>
+using namespace std;
+class Rectangle{
+private:
+  double length;
+  double width;
+public:
+  Rectangle(double len, double wid){
+    length = len;
+    width = wid;
+  }
+  double calculateArea(){
+    return length * width;
+  }
+};
+int main(){
+  Rectangle myRectangle(5,3);
+  cout << "Area of Triangle: " << myRectangle.calculateArea() <<endl;
+  return 0;
+}
+```
+
+Create a **`Book`** class with parameterized constructors to set the title, author, and publication year. Include a method to display the book details.
+
+``` cpp
+#include<iostream>
+#include<string>
+using namespace std;
+class Book{
+private:
+  string title;
+  string author;
+  int year;
+public:
+  Book(const string& t, const string& a, int y): title(t), author(a), year(y){}
+  void displayDetails(){
+    cout << "Title: " << title << endl;
+    cout << "Author: " << author << endl;
+    cout << "Year: " << year << endl
+  }
+};
+int main(){
+  Book myBook("The Great Gatsby", "F. Scott Fitzgerald", 1925);
+  myBook.displayDetails();
+  return 0;
+}
+```
+
+## 3. Copy Constructor
+
+It is a member function that initializes an object using another object of the same class
 
 # Destructor
 
