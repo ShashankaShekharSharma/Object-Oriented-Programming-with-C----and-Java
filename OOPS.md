@@ -322,6 +322,26 @@ DataTypes in C++ is mainly divided into two types:
         -   Enumeration
 
         -   Typedef
+# Abstraction vs Encapsulation
+
+## Abstraction
+
+- **Definition:** Deals with hiding the complex reality while exposing only the necessary parts.
+- **Focus:** Focuses on the outside view of an object, emphasizing what it does.
+- **Usage:** Provides a simplified view of the system, showing only the essential features.
+- **Example:** Defining an abstract class `Shape` with methods like `calculateArea` and `calculatePerimeter` without specifying the exact implementation for each shape.
+- **Goal:** Aims to reduce programming complexity and effort by providing a high-level view of entities.
+- **Level of View:** Concerned with the outside view, providing a way to interact with complex systems.
+
+## Encapsulation
+
+- **Definition:** Involves bundling the data (attributes) and methods (functions) that operate on the data into a single unit (class).
+- **Focus:** Focuses on the internal implementation details, hiding the complexity from the outside world.
+- **Usage:** Protects the internal state of an object and restricts direct access to it, enforcing controlled interaction through methods.
+- **Example:** Using a class `BankAccount` where attributes like balance and account number are private, and public methods control access and modification of these attributes.
+- **Goal:** Aims to make the object's internal details hidden, ensuring data integrity and preventing unauthorized access.
+- **Level of View:** Concerned with the internal details, ensuring data protection and maintaining a clear interface for interaction.
+
 
     # UML Interaction Diagram
 
